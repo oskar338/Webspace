@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+a {
+    font-size: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    float: left;
+    margin: 10px
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
