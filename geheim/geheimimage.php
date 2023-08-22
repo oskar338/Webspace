@@ -19,10 +19,10 @@ if(!isset($_SESSION["username"])){
 <body>
 
 <a href="geheimvideo.php">Videos</a>
-<p style="visibility:hidden">
- Dieser Text ist unsichtbar
-</p>
+
+<div>
 <a href="#anker">Runter</a>
+</div>
 
 <?php 
 	$sql = "SELECT * FROM images ORDER BY id DESC";
