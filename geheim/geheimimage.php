@@ -19,7 +19,7 @@ if(!isset($_SESSION["username"])){
 <body>
 
 <a href="geheimvideo.php">Videos</a>
-<p style="display:none;">Dieser Inhalt ist für keinen zugänglich.</p>
+<a name="dd"></a>
 <a href="#anker">Runter</a>
 
 <?php 
