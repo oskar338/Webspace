@@ -1,5 +1,5 @@
 <a href="geheimvideo.php">Zurück</a>
-<link rel="stylesheet" href="/style/styleupload.css.css">
+<link rel="stylesheet" href="/style/styleupload.css">
 
 <?php 
 
