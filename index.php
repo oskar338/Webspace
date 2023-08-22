@@ -2,7 +2,7 @@
 <html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Anmelden</title>
+    <title>suffkopp.com</title>
     <link rel="stylesheet" href="/style/stylelogin.css">
   </head>
   <body>

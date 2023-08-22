@@ -44,7 +44,7 @@
      ?>
     <div class="center">
     <h1>Account erstellen</h1>
-    <form action="register.php" method="post">
+    <form action="gzuz187.php" method="post">
 
     <div class="txt_field">
       <input type="text" name="username" placeholder="Username" required><br>
@@ -68,9 +68,7 @@
     
     <br>
 
-    <a href="Anmelden.php">Zur Anmeldung</a>
-    <a href="index.php">Zurück</a>
-    
+    <a href="index.php">Zur Anmeldung</a>
 
   </body>
   
