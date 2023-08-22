@@ -10,9 +10,11 @@ if(!isset($_SESSION["username"])){
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="de" dir="ltr">
 <head>
 
+<meta charset="utf-8">
+<title>suffkopp.com</title>
 <link rel="stylesheet" href="/style/stylegeheimvideo.css">
 
 </head>
