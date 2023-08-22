@@ -1,3 +1,6 @@
+<a href="geheimvideo.php">Zurück</a>
+<link rel="stylesheet" href="/style/styleupload.css.css">
+
 <?php 
 
 if (isset($_POST['submit']) && isset($_FILES['my_video'])) {

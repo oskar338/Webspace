@@ -1,5 +1,5 @@
 <a href="geheimimage.php">Zurück</a>
-<link rel="stylesheet" href="/style/styleupdateimage.css">
+<link rel="stylesheet" href="/style/styleupload.css.css">
 
 <?php 
 
