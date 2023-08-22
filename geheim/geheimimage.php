@@ -20,7 +20,7 @@ if(!isset($_SESSION["username"])){
 
 <a href="geheimvideo.php">Videos</a>
 
-<div>
+<div class="text1">
 <a href="#anker">Runter</a>
 </div>
 

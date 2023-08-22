@@ -26,8 +26,7 @@ a{
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
     text-decoration: underline;
     text-decoration-color: white;
-    margin-top: ;
-    
+    justify-content: right;
 }
 input[type="file"]{
     display: none;
@@ -54,5 +53,7 @@ input[type=submit]{
     cursor: pointer;
     padding: 15px;
 }
+
+
       
 
