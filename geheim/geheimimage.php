@@ -19,11 +19,11 @@ if(!isset($_SESSION["username"])){
 
 <body>
 
-<div class="text1">
+<div class="texta">
 <a href="geheimvideo.php">Videos</a>
 </div>
 
-<div class="text2">
+<div class="textb">
 <a href="#anker">Runter</a>
 </div>
 

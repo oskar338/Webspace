@@ -20,7 +20,7 @@ body {
 a{
     font-family: Aladin, cursive;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     font-size: 48px;
     color: black;
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
@@ -53,6 +53,7 @@ input[type=submit]{
     cursor: pointer;
     padding: 15px;
 }
+
 
 
       
