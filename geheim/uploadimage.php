@@ -1,5 +1,12 @@
+<!DOCTYPE html>
+
+</head>
+
 <a href="geheimimage.php">Zurück</a>
+<title>suffkopp.com</title>
 <link rel="stylesheet" href="/style/styleupload.css">
+
+</head>
 
 <?php 
 

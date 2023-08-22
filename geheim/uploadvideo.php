@@ -1,5 +1,12 @@
+<!DOCTYPE html>
+
+</head>
+
 <a href="geheimvideo.php">Zurück</a>
+<title>suffkopp.com</title>
 <link rel="stylesheet" href="/style/styleupload.css">
+
+</head>
 
 <?php 
 
