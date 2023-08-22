@@ -8,7 +8,6 @@ if(!isset($_SESSION["username"])){
 }
 
  ?>
-
 <!DOCTYPE html>
 
 <html>
@@ -20,10 +19,9 @@ if(!isset($_SESSION["username"])){
 <body>
 
 <a href="geheimvideo.php">Videos</a>
-<p style="display: none">
-    aaaaaaaaa
+<<p style="visibility:hidden">
+ Dieser Text ist unsichtbar
 </p>
-
 <a href="#anker">Runter</a>
 
 <?php 
@@ -51,7 +49,9 @@ if(!isset($_SESSION["username"])){
 
 <input type="submit" 
     name="submit"
-	value="Hochladen">    	
+	value="Hochladen">
+
+     	
 </form>
 
 <a name="anker"></a>
