@@ -1,3 +1,6 @@
+<a href="geheimimage.php">Zurück</a>
+<link rel="stylesheet" href="/style/styleupdateimage.css">
+
 <?php 
 
 if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
