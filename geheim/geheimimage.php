@@ -20,6 +20,17 @@ if(!isset($_SESSION["username"])){
 
 <a href="geheimvideo.php">Videos</a>
 
+<form action="uploadimage.php"
+    method="post"
+    enctype="multipart/form-data">
+
+<input type="file" id="Bildup" name="my_image">
+<label for="Bildup">Bild Auswählen</label>
+
+<input type="submit" 
+    name="submit"
+	value="Hochladen">
+
 <?php 
 	$sql = "SELECT * FROM images ORDER BY id DESC";
     $res = mysqli_query($conn,  $sql);
@@ -35,18 +46,7 @@ if(!isset($_SESSION["username"])){
 	<?php if (isset($_GET['error'])): ?>
 	<p><?php echo $_GET['Fehler']; ?></p>
 <?php endif ?>
-
-<form action="uploadimage.php"
-    method="post"
-    enctype="multipart/form-data">
-
-<input type="file" id="Bildup" name="my_image">
-<label for="Bildup">Bild Auswählen</label>
-
-<input type="submit" 
-    name="submit"
-	value="Hochladen">
-     	
+   	
 </form>
 
 </body>
