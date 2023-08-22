@@ -52,7 +52,7 @@ if(!isset($_SESSION["username"])){
      	
 </form>
 
-<a name="anker">Dein Anker</a>
+<a name="anker"></a>
 
 </body>
 </html>
