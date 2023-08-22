@@ -19,6 +19,7 @@ if(!isset($_SESSION["username"])){
 <body>
 
 <a href="geheimvideo.php">Videos</a>
+<b></b>
 <a href="#anker">Runter</a>
 
 <?php 
@@ -48,7 +49,6 @@ if(!isset($_SESSION["username"])){
     name="submit"
 	value="Hochladen">
 
-<a name="anker">Hoch</a>
      	
 </form>
 
