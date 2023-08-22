@@ -20,7 +20,7 @@ body {
 a{
     font-family: Aladin, cursive;
     font-weight: bold;
-    text-align: left;
+    vertical-align: bottom;
     font-size: 48px;
     color: black;
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
