@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-</head>
+<head>
 
 <a href="geheimvideo.php">Zurück</a>
 <title>suffkopp.com</title>
@@ -20,9 +20,7 @@ if (isset($_POST['submit']) && isset($_FILES['my_video'])) {
 	if ($error === 0) {
 		
         $video_ex = pathinfo($video_name, PATHINFO_EXTENSION);
-
     	$video_ex_lc = strtolower($video_ex);
-
     	$allowed_exs = array("mp4", "mov", "m4v", 'webm', 'avi', 'flv');
 
             if (in_array($video_ex_lc, $allowed_exs)) {

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-</head>
+<head>
 
 <a href="geheimimage.php">Zurück</a>
 <title>suffkopp.com</title>

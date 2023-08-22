@@ -11,6 +11,7 @@ if(!isset($_SESSION["username"])){
 
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
+
 <head>
 
 <meta charset="utf-8">
@@ -21,6 +22,10 @@ if(!isset($_SESSION["username"])){
 <body>
 
 <a href="geheimimage.php">Zurück</a>
+<p style="visibility:hidden">
+ AAAA
+</p>
+<a href="#anker">Runter</a>
 
 <div class="alb">
 	<?php 

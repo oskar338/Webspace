@@ -7,19 +7,18 @@ if(!isset($_SESSION["username"])){
   exit;
 }
 
- ?>
-<!DOCTYPE html>
+?>
 
+<!DOCTYPE html>
 <html lang="de" dir="ltr">
 
-</head>
+<head>
 
 <meta charset="utf-8">
 <title>suffkopp.com</title>
 <link rel="stylesheet" href="/style/stylegeheim.css">
 
 </head>
-
 <body>
 
 <a href="geheimvideo.php">Videos</a>
