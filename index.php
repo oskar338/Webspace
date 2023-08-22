@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
-
   <head>
     <meta charset="utf-8">
-    
-    <title>Suffkopp.com</title>
-    <link href="/style/style.css" type="text/css" rel="stylesheet" >
-
+    <title>Anmelden</title>
+    <link rel="stylesheet" href="/style/stylelogin.css">
   </head>
   <body>
+    <?php
+    if(isset($_POST["submit"])){
+      require("mysql.php");
+      $stmt = $mysql->prepare("SELECT * FROM accounts WHERE USERNAME = :user"); //Username überprüfen
+      $stmt->bindParam(":user", $_POST["username"]);
+      $stmt->execute();
+      $count = $stmt->rowCount();
 
-  <a href="Anmelden.php">Anmelden</a>
+      if($count == 1){
+        //Username ist frei
+        $row = $stmt->fetch();
 
-    <h1>
-    Das ist Marv mit den Bres 
-    </h1>
+        if(password_verify($_POST["pw"], $row["PASSWORD"])){
+          session_start();
+          $_SESSION["username"] = $row["USERNAME"];
+          header("Location: /geheim/geheimimage.php");
 
-<img src="/img/img1.jpg" width="900px" height="800px" alt="Bild1" style="margin:5px">
+        } else {
+          echo "Der Login ist fehlgeschlagen";
+        }
 
-<img src="/img/img2.png" width="700px" height="800px" alt="Bild2" style="margin:5px">
+      } else {
+          echo "Der Login ist fehlgeschlagen";
+      }
+    }
+     ?>
+    <div class="center">
 
-<img src="/img/img3.jpg" width="900px" height="700px" alt="Bild3" style="margin:5px">
+    <h1>Anmelden</h1>
+    <form action="index.php" method="post">
 
-<img src="/img/img4.png" width="750px" height="700px" alt="Bild4" style="margin:5px">
+    <div class="txt_field">
+      <input type="text" name="username" placeholder="Username" required><br>
+    </div>
 
-<img src="/img/img5.jpg" width="900px" height="900px" alt="Bild5" style="margin:5px">
+    <div class="txt_field">
+      <input type="password" name="pw" placeholder="Passwort" required><br>
+    </div>
 
-<img src="/img/img6.PNG" width="900px" height="900px" alt="Bild6" style="margin:5px">
+    <div class="signup_link">
+      <button type="submit" name="submit">Einloggen</button>
+      </div>
+
+    </form>
+    </div>
+
+    <br>
 
   </body>
 
 </html>
-
