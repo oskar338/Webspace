@@ -19,8 +19,8 @@ if(!isset($_SESSION["username"])){
 <body>
 
 <a href="geheimvideo.php">Videos</a>
-<<p style="visibility:hidden">
- AAAAAAAAAA
+<p style="visibility:hidden">
+ AAAA
 </p>
 <a href="#anker">Runter</a>
 
