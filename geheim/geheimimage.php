@@ -8,6 +8,7 @@ if(!isset($_SESSION["username"])){
 }
 
  ?>
+
 <!DOCTYPE html>
 
 <html>
@@ -18,9 +19,11 @@ if(!isset($_SESSION["username"])){
 
 <body>
 
-<a href="geheimvideo.php">Videos</a>
-
 <div class="text1">
+<a href="geheimvideo.php">Videos</a>
+</div>
+
+<div class="text2">
 <a href="#anker">Runter</a>
 </div>
 
@@ -49,9 +52,7 @@ if(!isset($_SESSION["username"])){
 
 <input type="submit" 
     name="submit"
-	value="Hochladen">
-
-     	
+	value="Hochladen">    	
 </form>
 
 <a name="anker"></a>
