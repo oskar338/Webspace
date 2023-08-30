@@ -39,7 +39,7 @@
      ?>
     <div class="center">
 
-    <h1>Anmelden</h1>
+    <h1>Admin Login</h1>
     <form action="AdminLogin.php" method="post">
 
     <div class="txt_field">
@@ -58,6 +58,8 @@
     </div>
 
     <br>
+
+    <a href="../index.php">Zurück zur Startseite</a>
 
   </body>
 
