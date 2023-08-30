@@ -16,15 +16,18 @@
     </tr>
 
     <?php
-
     session_start();
     if(!isset($_SESSION["username"])){
-    header("Location: index.php");
+    header("Location: AdminLogin.php");
     exit;
     }
 
-    require("mysql.php");
+    include("rankmanger.php");
+    if($row["SERVERRANK"] == 2) {
+        session_destroy();
+    }
 
+    require("mysql.php");
     if(isset($_GET["del"])){
         if(!empty($_GET["del"])){
             $stmt = $mysql->prepare("DELETE FROM accounts WHERE ID = :id");
