@@ -22,7 +22,8 @@
     exit;
     }
 
-    if(["SERVERRANK"] == 2) {
+    require("rankmanger.php");
+    if(getRank($username) != 2){
         session_destroy();
     }
 
