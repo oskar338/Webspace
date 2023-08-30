@@ -34,7 +34,7 @@ if(isset($_POST["submit"])){
  ?>
     <div class="center">
     <h1>Account erstellen</h1>
-    <form action="gzuz187.php" method="post">
+    <form action="accountrestrictiongzuz187.php" method="post">
 
     <div class="txt_field">
       <input type="text" name="username" placeholder="Username" required><br>
