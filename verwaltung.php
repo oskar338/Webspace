@@ -19,9 +19,14 @@
         $row = $stmt->fetch();
 
         if(password_verify($_POST["pw"], $row["PASSWORD"])){
+          if($row["SERVERRANK"] == 2){
           session_start();
           $_SESSION["username"] = $row["USERNAME"];
           header("Location: /Benutzerverwaltung/user.php");
+
+        } else {
+          echo "Du hast dazu keine Berechtigung.";
+        }
 
         } else {
           echo "Der Login ist fehlgeschlagen";
