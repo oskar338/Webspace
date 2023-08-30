@@ -58,7 +58,8 @@ if(isset($_POST["submit"])){
     
     <br>
 
-    <a href="../index.php">Zur Anmeldung</a>
+    <a href="../index.php">Zur Anmeldung</a><br>
+    <a href="Benutzer"></a>
 
   </body>
   

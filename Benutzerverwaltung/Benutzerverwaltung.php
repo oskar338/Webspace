@@ -16,6 +16,13 @@
     </tr>
 
     <?php
+
+    session_start();
+    if(!isset($_SESSION["username"])){
+    header("Location: index.html");
+    exit;
+    }
+
     require("mysql.php");
 
     if(isset($_GET["del"])){
