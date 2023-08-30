@@ -46,9 +46,9 @@
     
     </table>
    
-    <a href="index.php">Zurück zur Starseite</a><br>
-    <a href="register.php">Neuen Account erstellen</a><br>
-    <a href="logout.php">Auslogen</a><br>
+    <a href="../index.php">Zurück zur Starseite</a><br>
+    <a href="../gzuz187.php">Neuen Account erstellen</a><br>
+
 
 </body>
 </html>
