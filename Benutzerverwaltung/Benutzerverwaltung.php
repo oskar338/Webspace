@@ -22,8 +22,7 @@
     exit;
     }
 
-    include("rankmanger.php");
-    if($row["SERVERRANK"] == 2) {
+    if(["SERVERRANK"] == 2) {
         session_destroy();
     }
 
