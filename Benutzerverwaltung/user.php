@@ -34,8 +34,6 @@
         <tr>
         <td><?php echo $row["ID"] ?></td>
         <td><?php echo $row["USERNAME"] ?></td>
-        <td><?php echo date("d.M.Y - H:i", $row["LASTLOGIN"]) ?></td>
-        <td><?php echo date("d.M.Y - H:i", $row["FIRSTLOGIN"]) ?></td>
         <td><a href="user.php?del=<?php echo $row["ID"] ?>"><i class="fas fa-user-minus"></i></a></td>
 
         </tr>
