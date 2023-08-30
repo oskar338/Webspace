@@ -22,7 +22,7 @@
           if($row["SERVERRANK"] == 2){
           session_start();
           $_SESSION["username"] = $row["USERNAME"];
-          header("Location: user.php");
+          header("Location: Benutzerverwaltung.php");
 
         } else {
           echo "Du hast dazu keine Berechtigung.";
@@ -40,7 +40,7 @@
     <div class="center">
 
     <h1>Anmelden</h1>
-    <form action="verwaltung.php" method="post">
+    <form action="AdminLogin.php" method="post">
 
     <div class="txt_field">
       <input type="text" name="username" placeholder="Username" required><br>
