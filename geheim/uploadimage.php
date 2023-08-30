@@ -11,7 +11,7 @@
 <?php 
 
 if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
-	include "mysqlgeheim.php";
+	include "../mysql.php";
 
 	$img_name = $_FILES['my_image']['name'];
 	$tmp_name = $_FILES['my_image']['tmp_name'];

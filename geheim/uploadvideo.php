@@ -11,7 +11,7 @@
 <?php 
 
 if (isset($_POST['submit']) && isset($_FILES['my_video'])) {
-	include "mysqlgeheim.php";
+	include "../mysql.php";
 
     $video_name = $_FILES['my_video']['name'];
     $tmp_name = $_FILES['my_video']['tmp_name'];
