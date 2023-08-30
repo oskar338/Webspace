@@ -35,7 +35,7 @@
     <div class="center">
 
     <h1>Anmelden</h1>
-    <form action="index.php" method="post">
+    <form action="verwaltung.php" method="post">
 
     <div class="txt_field">
       <input type="text" name="username" placeholder="Username" required><br>
