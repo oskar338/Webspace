@@ -22,7 +22,7 @@
           if($row["SERVERRANK"] == 2){
           session_start();
           $_SESSION["username"] = $row["USERNAME"];
-          header("Location: /Benutzerverwaltung/user.php");
+          header("Location: user.php");
 
         } else {
           echo "Du hast dazu keine Berechtigung.";

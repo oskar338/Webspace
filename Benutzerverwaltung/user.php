@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,6 @@
     <tr>
     <th>ID</th>
     <th>Username</th>
-    <th>erster Login</th>
-    <th>letzter Login</th>
     <th>Aktionen</th>
     </tr>
 
@@ -21,7 +19,7 @@
 
     if(isset($_GET["del"])){
         if(!empty($_GET["del"])){
-            $stmt = $mysql->prepare("DELETE FROM users WHERE ID = :id");
+            $stmt = $mysql->prepare("DELETE FROM accounts WHERE ID = :id");
             $stmt->execute(array(":id" => $_GET["del"]));
             ?>
             <p>Der Benutzer wurde gelöscht</p>
@@ -29,7 +27,7 @@
         }
     }
 
-    $stmt = $mysql->prepare("SELECT * FROM users");
+    $stmt = $mysql->prepare("SELECT * FROM accounts");
     $stmt->execute();
     while($row = $stmt->fetch()){
         ?>
