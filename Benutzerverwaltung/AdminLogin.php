@@ -2,7 +2,7 @@
 <html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Login Benutzerverwaltung</title>
+    <title>Admin Login</title>
     <link rel="stylesheet" href="/style/stylelogin.css">
   </head>
   <body>
