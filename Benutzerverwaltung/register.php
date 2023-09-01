@@ -7,7 +7,7 @@
   </head>
   <body>
     <?php
-    
+
     session_start();
     if(!isset($_SESSION["username"])){
     header("Location: AdminLogin.php");
@@ -71,6 +71,7 @@ if(isset($_POST["submit"])){
     <br>
 
     <a href="../index.php">Zur Anmeldung</a><br>
+    <a href="../index.php">Zur Benutzerverwaltung</a><br>
 
   </body>
   
