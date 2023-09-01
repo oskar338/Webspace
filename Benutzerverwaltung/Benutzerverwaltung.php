@@ -23,8 +23,21 @@
     }
 
     require("rankmanger.php");
-    if(getRank($username) != 2){
+    if(getRank($username) != -1){
         session_destroy();
+        exit;
+    }
+
+    require("rankmanger.php");
+    if(getRank($username) == 1){
+        session_destroy();
+        exit;
+    }
+
+    require("rankmanger.php");
+    if(getRank($username) != 1){
+        session_destroy();
+        exit;
     }
 
     require("mysql.php");
@@ -45,7 +58,7 @@
         <tr>
         <td><?php echo $row["ID"] ?></td>
         <td><?php echo $row["USERNAME"] ?></td>
-        <td><a href="user.php?del=<?php echo $row["ID"] ?>"><i class="fas fa-user-minus"></i></a></td>
+        <td><a href="Benutzerverwaltung.php?del=<?php echo $row["ID"] ?>"><i class="fas fa-user-minus"></i></a></td>
 
         </tr>
         <?php
