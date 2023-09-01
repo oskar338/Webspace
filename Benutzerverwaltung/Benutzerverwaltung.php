@@ -22,18 +22,12 @@
     exit;
     }
 
-    require("rankmanger.php");
-    if(getRank($username) != -1){
-        session_destroy();
-        exit;
+    require("rankmanager.php");
+    if(getRank($_SESSION["username"]) != ADMIN){
+    header("Location: geheim.php");
+    exit;
     }
-
-    require("rankmanger.php");
-    if(getRank($username) == 1){
-        session_destroy();
-        exit;
-    }
-
+        
     require("mysql.php");
     if(isset($_GET["del"])){
         if(!empty($_GET["del"])){
