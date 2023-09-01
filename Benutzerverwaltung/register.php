@@ -7,6 +7,12 @@
   </head>
   <body>
     <?php
+    
+    session_start();
+    if(!isset($_SESSION["username"])){
+    header("Location: AdminLogin.php");
+    exit;
+    }
 
   require("rankmanger.php");
     if(getRank($_SESSION["username"]) != ADMIN){
