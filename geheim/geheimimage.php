@@ -1,4 +1,4 @@
-<?php include "\MYSQL\mysql.php"; ?>
+<?php include "mysqlgeheim.php"; ?>
 
 <?php
 session_start();
