@@ -22,12 +22,12 @@
     exit;
     }
 
-    require("rankmanager.php");
+    require("rankmanger.php");
     if(getRank($_SESSION["username"]) != ADMIN){
     header("Location: geheim.php");
     exit;
     }
-        
+
     require("mysql.php");
     if(isset($_GET["del"])){
         if(!empty($_GET["del"])){
