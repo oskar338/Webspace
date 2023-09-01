@@ -1,4 +1,4 @@
-<?php include "/httpdocs/mysql.php"; ?>
+<?php include "\MYSQL\mysql.php"; ?>
 
 <?php
 session_start();
