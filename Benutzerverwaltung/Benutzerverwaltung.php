@@ -9,6 +9,7 @@
 </head>
 <body>
 <table>
+
     <tr>
     <th>ID</th>
     <th>Username</th>
@@ -52,13 +53,10 @@
         <?php
     }
     ?>
-
-    
     </table>
    
     <a href="../index.php">Zurück zur Starseite</a><br>
     <a href="register.php">Neuen Account erstellen</a><br>
-
 
 </body>
 </html>
