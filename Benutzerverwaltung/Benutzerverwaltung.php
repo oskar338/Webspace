@@ -34,12 +34,6 @@
         exit;
     }
 
-    require("rankmanger.php");
-    if(getRank($username) != 1){
-        session_destroy();
-        exit;
-    }
-
     require("mysql.php");
     if(isset($_GET["del"])){
         if(!empty($_GET["del"])){
