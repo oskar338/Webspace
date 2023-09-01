@@ -8,6 +8,12 @@
   <body>
     <?php
 
+require("rankmanger.php");
+    if(getRank($_SESSION["username"]) != ADMIN){
+    header("Location: AdminLogin.php");
+    exit;
+  }
+
 if(isset($_POST["submit"])){
   require("mysql.php");
   $stmt = $mysql->prepare("SELECT * FROM accounts WHERE USERNAME = :user"); //Username überprüfen
@@ -34,7 +40,7 @@ if(isset($_POST["submit"])){
  ?>
     <div class="center">
     <h1>Account erstellen</h1>
-    <form action="accountrestrictiongzuz187.php" method="post">
+    <form action="register.php" method="post">
 
     <div class="txt_field">
       <input type="text" name="username" placeholder="Username" required><br>
