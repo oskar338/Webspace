@@ -24,7 +24,7 @@
 
     require("rankmanger.php");
     if(getRank($_SESSION["username"]) != ADMIN){
-    header("Location: geheim.php");
+    header("Location: AdminLogin.php");
     exit;
     }
 
