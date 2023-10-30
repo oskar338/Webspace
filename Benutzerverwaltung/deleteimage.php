@@ -8,6 +8,10 @@
 
 </head>
 <body>
+
+<a href="Benutzerverwaltung.php">Zur Benutzerverwaltung</a><br>
+<a href="../index.php">Zurück zur Starseite</a><br>
+
 <table>
 
 
@@ -58,7 +62,7 @@ $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
         ?>
         <tr>
         <td><?php echo $row["id"] ?></td>
-        <td><a href="<?php echo $image_url ?>" target="_self"><?php echo $row["image_url"] ?>
+        <td><?php echo $row["image_url"] ?></td>
         <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
 
         </tr>
