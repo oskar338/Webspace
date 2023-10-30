@@ -34,16 +34,22 @@
 <?php
 
 require("mysql.php");
-    if(isset($_GET["del"])){
-        if(!empty($_GET["del"])){
-            $stmt = $mysql->prepare("DELETE FROM images WHERE id = :id");
-            $stmt->execute(array(":id" => $_GET["del"]));
-            ?>
-            <p>Das Bild wurde gelöscht</p>
-            
-            <?php
-        }
+if(isset($_GET["del"])){
+    if(!empty($_GET["del"])){
+        $stmt = $mysql->prepare("SELECT * FROM images WHERE id = :id");
+        $stmt->execute(array(":id" => $_GET["del"]));
+        $row = $stmt->fetch();
+        $image_url = $row["image_url"];
+        
+        // Delete image from file storage
+        unlink($image_url);
+        
+        // Delete image from database
+        $stmt = $mysql->prepare("DELETE FROM images WHERE id = :id");
+        $stmt->execute(array(":id" => $_GET["del"]));
+
     }
+}
 
 $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
     $stmt->execute();
