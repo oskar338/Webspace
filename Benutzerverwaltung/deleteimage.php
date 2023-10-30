@@ -36,7 +36,7 @@
 require("mysql.php");
     if(isset($_GET["del"])){
         if(!empty($_GET["del"])){
-            $stmt = $mysql->("INSERT INTO delete_url (url_link) VALUES (image_url)");
+            $mysql->("INSERT INTO delete_url (url_link) VALUES (image_url)");
             $stmt = $mysql->prepare("DELETE FROM images WHERE id = :id");
             $stmt->execute(array(":id" => $_GET["del"]));
             ?>
