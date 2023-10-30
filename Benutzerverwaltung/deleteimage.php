@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style/stylelogin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benutzerverwaltung</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 
