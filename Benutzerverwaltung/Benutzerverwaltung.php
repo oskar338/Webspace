@@ -13,7 +13,6 @@
     <tr>
     <th>ID</th>
     <th>Username</th>
-    <th>Server Rank</th>
     <th>Löschen</th>
     </tr>
 
@@ -48,7 +47,6 @@
         <tr>
         <td><?php echo $row["ID"] ?></td>
         <td><?php echo $row["USERNAME"] ?></td>
-        <td><?php echo $row["SERVERRANK"] ?></td>
         <td><a href="Benutzerverwaltung.php?del=<?php echo $row["ID"] ?>"><i class="fas fa-user-minus"></i></a></td>
 
         </tr>
