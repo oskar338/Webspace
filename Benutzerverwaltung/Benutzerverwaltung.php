@@ -57,8 +57,8 @@
    
     <a href="register.php">Neuen Account erstellen</a><br>
     <a href="../index.php">Zurück zur Starseite</a><br>
-    <a href=ImageVerwaltung/deleteimage.php">Foto löschen</a><br>
-    <a href=ImageVerwaltung/deletevideo.php">Video löschen</a><br>
+    <a href="deleteimage.php">Foto löschen</a><br>
+    <a href="deletevideo.php">Video löschen</a><br>
 
 </body>
 </html>
