@@ -40,8 +40,8 @@ if(isset($_GET["del"])){
         $stmt->execute(array(":id" => $_GET["del"]));
         $row = $stmt->fetch();
         $image_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
-        echo '<a href="' . $image_url . '"><img src="' . $image_url . '" alt="Bildbeschreibung"></a>';
-
+        echo '<a href="' . $image_url . '"><img src="' . $image_url . '" alt="Bildbeschreibung" style="max-width: 100%; height: auto;"></a>';
+        
         // Lösche Foto von Dateisystem
         unlink($image_url);
         
