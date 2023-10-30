@@ -39,7 +39,7 @@ if(isset($_GET["del"])){
         $stmt = $mysql->prepare("SELECT * FROM images WHERE id = :id");
         $stmt->execute(array(":id" => $_GET["del"]));
         $row = $stmt->fetch();
-        $image_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
+        $image_url = "/httpdocs/geheim/uploads/" . $row["image_url"];
 
         // Foto anzeigen
         echo "<img src=\"$image_url\">";
