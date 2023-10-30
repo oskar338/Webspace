@@ -54,8 +54,7 @@
     }
     ?>
     </table>
-    
-   <br>
+
    <br>
    <br>
     <a href="register.php">Neuen Account erstellen</a><br>
