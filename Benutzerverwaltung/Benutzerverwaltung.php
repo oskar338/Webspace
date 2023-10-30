@@ -57,7 +57,7 @@
    
     <a href="register.php">Neuen Account erstellen</a><br>
     <a href="../index.php">Zurück zur Starseite</a><br>
-    <a href="deleteimage.php">Foto löschen</a><br>
+    <a href="/Benutzerverwaltung/ImageVerwaltung/deleteimage.php">Foto löschen</a><br>
 
 </body>
 </html>
