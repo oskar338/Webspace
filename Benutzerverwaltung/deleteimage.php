@@ -41,11 +41,13 @@ if(isset($_GET["del"])){
         $row = $stmt->fetch();
         $image_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
 
-        
-        // Delete image from file storage
+        // Display image
+        echo "<img src=\"$image_url\">";
+
+        // Lösche Foto von Dateisystem
         unlink($image_url);
         
-        // Delete image from database
+        // Lösche Foto von Datenbank
         $stmt = $mysql->prepare("DELETE FROM images WHERE id = :id");
         $stmt->execute(array(":id" => $_GET["del"]));
 
@@ -58,25 +60,13 @@ $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
         ?>
         <tr>
         <td><?php echo $row["id"] ?></td>
-        <td><?php echo $row["image_url"] ?></td>
+        <td><a href="viewimage.php?id=<?php echo $row["id"] ?>"><?php echo $row["image_url"] ?></a></td>
         <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
 
         </tr>
         <?php
     }
-
-
-
-
-
-
-
-
-
 ?>
-
-
-
 
 </table>
 </body>
