@@ -39,7 +39,8 @@ if(isset($_GET["del"])){
         $stmt = $mysql->prepare("SELECT * FROM images WHERE id = :id");
         $stmt->execute(array(":id" => $_GET["del"]));
         $row = $stmt->fetch();
-        $image_url = $row["image_url"];
+        $image_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
+
         
         // Delete image from file storage
         unlink($image_url);
