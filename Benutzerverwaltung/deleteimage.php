@@ -34,6 +34,21 @@
 
 <?php
 
+$stmt = $mysql->prepare("SELECT * FROM images");
+    $stmt->execute();
+    while($row = $stmt->fetch()){
+        ?>
+        <tr>
+        <td><?php echo $row["id"] ?></td>
+        <td><?php echo $row["image_url"] ?></td>
+        <td><a href="Benutzerverwaltung.php?del=<?php echo $row["ID"] ?>"><i class="fas fa-user-minus"></i></a></td>
+
+        </tr>
+        <?php
+    }
+
+
+
 
 
 
