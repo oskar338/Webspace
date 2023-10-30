@@ -58,7 +58,7 @@ $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
         ?>
         <tr>
         <td><?php echo $row["id"] ?></td>
-        <td><a href="<?php echo $image_url ?>" target="_blank"><?php echo $row["image_url"] ?>
+        <td><a href="<?php echo $image_url ?>" target="_self"><?php echo $row["image_url"] ?>
         <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
 
         </tr>
