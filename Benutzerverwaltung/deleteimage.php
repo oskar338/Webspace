@@ -21,7 +21,7 @@
 <tr>
     <th>ID</th>
     <th>Foto-Adresse</th>
-    <th>Aktionen</th>
+    <th>Löschen</th>
     </tr>
 
 <?php

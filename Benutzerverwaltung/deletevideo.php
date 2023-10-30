@@ -20,7 +20,7 @@
 <tr>
     <th>ID</th>
     <th>Video-Adresse</th>
-    <th>Aktionen</th>
+    <th>Löschen</th>
     </tr>
 
 <?php

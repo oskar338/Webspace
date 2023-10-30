@@ -13,7 +13,7 @@
     <tr>
     <th>ID</th>
     <th>Username</th>
-    <th>Aktionen</th>
+    <th>Löschen</th>
     </tr>
 
     <?php
@@ -56,10 +56,11 @@
     </table>
 
    <br>
-   <br>
     <a href="register.php">Neuen Account erstellen</a><br>
+    <br>
     <a href="deleteimage.php">Foto löschen</a><br>
     <a href="deletevideo.php">Video löschen</a><br>
+    <br>
     <a href="../index.php">Zurück zur Starseite</a><br>
 
 </body>
