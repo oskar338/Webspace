@@ -2,7 +2,7 @@
 <html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Account erstellen</title>
+    <title>suffkopp.com</title>
     <link rel="stylesheet" href="/style/stylelregister.css">
   </head>
   <body>
