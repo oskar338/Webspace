@@ -66,16 +66,6 @@ $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
     }
 ?>
 
-<?php
-    $stmt = $mysql->prepare("SELECT * FROM images WHERE id = :id");
-    $stmt->execute(array(":id" => $_GET["id"]));
-    $row = $stmt->fetch();
-    $image_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
-?>
-
-<img src="<?php echo $image_url; ?>" alt="Bild">
-
-
 </table>
 </body>
 </html>
