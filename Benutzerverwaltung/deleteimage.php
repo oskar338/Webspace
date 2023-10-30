@@ -53,6 +53,12 @@ if(isset($_GET["del"])){
     }
 }
 
+?>
+
+<img src="<?php echo $image_url; ?>" alt="Bild">
+
+<?php
+
 $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
     $stmt->execute();
     while($row = $stmt->fetch()){
@@ -66,8 +72,6 @@ $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
         <?php
     }
 ?>
-
-<img src="<?php echo $image_url; ?>" alt="Bild">
 
 
 </table>
