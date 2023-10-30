@@ -39,7 +39,7 @@ if(isset($_GET["del"])){
         $stmt = $mysql->prepare("SELECT * FROM images WHERE id = :id");
         $stmt->execute(array(":id" => $_GET["del"]));
         $row = $stmt->fetch();
-        $image_url = "/httpdocs/geheim/uploads/" . $row["image_url"];
+        $image_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
 
         // Foto anzeigen
         echo "<img src=\"$image_url\">";
@@ -60,7 +60,7 @@ $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
         ?>
         <tr>
         <td><?php echo $row["id"] ?></td>
-        <td><a href="viewimage.php?id=<?php echo $row["image_url"] ?>"><?php echo $row["image_url"] ?></a></td>
+        <td><a href="viewimage.php?id=<?php echo $row["id"] ?>"><?php echo $row["image_url"] ?></a></td>
         <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
 
         </tr>
