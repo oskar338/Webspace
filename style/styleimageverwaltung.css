@@ -10,7 +10,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: rgb(37, 150, 190);
+  background: #A4A4A4;
   height: 100vh;
 }
 .center{
@@ -33,7 +33,7 @@ a{
   color: black;
   text-shadow: rgb(0, 0, 0) 2px 2px 2px;
   text-decoration: underline;
-  text-decoration-color: black;
+  text-decoration-color: white;
   margin-left: 20px;
 }
 
