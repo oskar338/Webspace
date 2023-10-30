@@ -18,7 +18,7 @@
 
 <tr>
     <th>ID</th>
-    <th>Foto-Adresse</th>
+    <th>Video-Adresse</th>
     <th>Aktionen</th>
     </tr>
 
