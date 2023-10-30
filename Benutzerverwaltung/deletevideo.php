@@ -33,9 +33,9 @@
     if(getRank($_SESSION["username"]) != ADMIN){
     header("Location: AdminLogin.php");
     exit;
-    }
-?>
+}
 
+?>
 <?php
 
 require("mysql.php");
@@ -46,16 +46,15 @@ if(isset($_GET["del"])){
         $row = $stmt->fetch();
         $video_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploadvideos/" . $row["video_url"];
 
-        // Lösche Foto von Dateisystem
-        unlink($image_url);
+        // Lösche Video von Dateisystem
+        unlink($video_url);
         
-        // Lösche Foto von Datenbank
+        // Lösche Video von Datenbank
         $stmt = $mysql->prepare("DELETE FROM videos WHERE id = :id");
         $stmt->execute(array(":id" => $_GET["del"]));
 
     }
 }
-
 
 $stmt = $mysql->prepare("SELECT * FROM videos ORDER BY id DESC");
     $stmt->execute();
@@ -65,7 +64,6 @@ $stmt = $mysql->prepare("SELECT * FROM videos ORDER BY id DESC");
         <td><?php echo $row["id"] ?></td>
         <td><?php echo $row["video_url"] ?>
         <td><a href="deletevideo.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
-
         </tr>
         <?php
     }
