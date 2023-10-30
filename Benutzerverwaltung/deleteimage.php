@@ -10,12 +10,12 @@
 <body>
 <table>
 
+
 <tr>
     <th>ID</th>
     <th>Foto-Adresse</th>
     <th>Aktionen</th>
     </tr>
-
 
 <?php
     session_start();
@@ -37,9 +37,11 @@ require("mysql.php");
     if(isset($_GET["del"])){
         if(!empty($_GET["del"])){
             $stmt = $mysql->prepare("DELETE FROM images WHERE id = :id");
+            $stmt = $mysql->prepare("INSERT INTO delete_url (delete_url))");
             $stmt->execute(array(":id" => $_GET["del"]));
             ?>
             <p>Das Bild wurde gelöscht</p>
+            
             <?php
         }
     }
