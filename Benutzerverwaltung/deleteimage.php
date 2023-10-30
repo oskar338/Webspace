@@ -36,7 +36,7 @@
 require("mysql.php");
     if(isset($_GET["del"])){
         if(!empty($_GET["del"])){
-            $stmt = $mysql->prepare("DELETE FROM images WHERE id = :id ORDER BY id DESC");
+            $stmt = $mysql->prepare("DELETE FROM images WHERE id = :id");
             $stmt->execute(array(":id" => $_GET["del"]));
             ?>
             <p>Das Bild wurde gelöscht</p>
@@ -44,7 +44,7 @@ require("mysql.php");
         }
     }
 
-$stmt = $mysql->prepare("SELECT * FROM images");
+$stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
     $stmt->execute();
     while($row = $stmt->fetch()){
         ?>
