@@ -38,6 +38,8 @@
     }
 ?>
 
+<div class="link">
+
 <?php
 
 require("mysql.php");
@@ -62,6 +64,8 @@ $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
 $stmt->execute();
 while($row = $stmt->fetch()){
 
+
+
     ?>
     <tr>
     <td><?php echo $row["id"] ?></td>
@@ -71,6 +75,8 @@ while($row = $stmt->fetch()){
     <?php
 }
 ?>
+
+</div>
 
 </table>
 </body>
