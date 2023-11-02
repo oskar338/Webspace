@@ -47,9 +47,6 @@ if(isset($_GET["del"])){
         $row = $stmt->fetch();
         $video_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploadvideos/" . $row["video_url"];
 
-        //Nachricht Löschen erfolgreich
-        echo "Das Lösschen war erfolgreich";
-
         // Lösche Video von Dateisystem
         unlink($video_url);
         
@@ -57,6 +54,8 @@ if(isset($_GET["del"])){
         $stmt = $mysql->prepare("DELETE FROM videos WHERE id = :id");
         $stmt->execute(array(":id" => $_GET["del"]));
 
+    } else {
+        echo "Das Lösschen war erfolgreich";
     }
 }
 
