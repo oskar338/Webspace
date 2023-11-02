@@ -34,3 +34,7 @@ a{
   text-decoration: none;
 }
 
+link {
+    justify-content: center;
+    text-align: center;
+}
