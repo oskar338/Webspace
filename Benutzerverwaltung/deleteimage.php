@@ -64,7 +64,27 @@ $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
         ?>
         <tr>
         <td><?php echo $row["id"] ?></td>
-        <td><a href="<?php echo $row["image_url"] ?>"><img src="<?php echo $row["image_url"] ?>"></a></td>
+        <td>
+            
+    <?php 
+	$sql = "SELECT * FROM images ORDER BY id DESC";
+    $res = mysqli_query($conn,  $sql);
+
+    if (mysqli_num_rows($res) > 0) {
+    while ($images = mysqli_fetch_assoc($res)) {  ?>
+             
+    <div class="alb">
+    <img src="uploads/<?=$images['image_url']?>">
+    </div>
+          		
+    <?php } }?>
+	<?php if (isset($_GET['error'])): ?>
+	<p><?php echo $_GET['Fehler']; ?></p>
+    <?php endif ?>
+     
+    </td>
+
+
         <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
         </tr>
         <?php
