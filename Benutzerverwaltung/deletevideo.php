@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>suffkopp.com</title>
-    <link rel="stylesheet" href="/style/styleimageverwaltung.css">
+    <link rel="stylesheet" href="/style/styleimage.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 
 </head>
@@ -57,19 +57,25 @@ if(isset($_GET["del"])){
     }
 }
 
-$stmt = $mysql->prepare("SELECT * FROM videos ORDER BY id DESC");
-    $stmt->execute();
-    while($row = $stmt->fetch()){
-        ?>
-        <tr>
-        <td><?php echo $row["id"] ?></td>
-        <td><?php echo $row["video_url"] ?>
-        <td><a href="deletevideo.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
-        </tr>
-        <?php
-    }
+$stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
+$stmt->execute();
+while($row = $stmt->fetch()){
+
+
+
+    ?>
+    <tr>
+    <td><?php echo $row["id"] ?></td>
+    <div class="link"><td><a href="<?php echo "/geheim/uploadvideos/" . $row["video_url"] ?>"><?php echo $row["video_url"]?></a></td></div>
+    <td><a href="deletevideo.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
+    </tr>
+    <?php
+}
 ?>
 
 </table>
 </body>
 </html>
+
+
+
