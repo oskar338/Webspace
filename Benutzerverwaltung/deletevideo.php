@@ -61,8 +61,6 @@ $stmt = $mysql->prepare("SELECT * FROM videos ORDER BY id DESC");
 $stmt->execute();
 while($row = $stmt->fetch()){
 
-
-
     ?>
     <tr>
     <td><?php echo $row["id"] ?></td>
