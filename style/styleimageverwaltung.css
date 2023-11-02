@@ -25,13 +25,12 @@ body{
 }
 
 .link {
-  font-size: 15px;
+  font-size: 66px;
 }
 
 .linkoben {
   font-family: Aladin, cursive;
   font-weight: bold;
-  text-align: center;
   font-size: 44px;
   color: white;
   text-shadow: rgb(0, 0, 0) 2px 2px 2px;
