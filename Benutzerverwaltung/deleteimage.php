@@ -58,15 +58,9 @@ if(isset($_GET["del"])){
     }
 }
 
-$stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
-    $stmt->execute();
-    while($row = $stmt->fetch()){
 ?>
 
-        <tr>
-
-        <td><?php echo $row["id"] ?></td>
-
+    <tr>
     <td>
     <?php $sql = "SELECT * FROM images ORDER BY id DESC";
     $res = mysqli_query($conn,  $sql);
@@ -75,16 +69,16 @@ $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
     while ($images = mysqli_fetch_assoc($res)) {  ?>
              
     <div class="alb">
-    <img src="uploads/<?=$images['image_url']?>">
+    <img src="/geheim/uploads/<?=$images['image_url']?>">
     </div>    		
     <?php } }?>
     </td>
 
-        <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
+    <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
     
-        </tr>
-        <?php 
-    }
+    </tr>
+    <?php 
+}
 ?>
 
 </table>
