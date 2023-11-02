@@ -57,7 +57,7 @@ if(isset($_GET["del"])){
     }
 }
 
-$stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
+$stmt = $mysql->prepare("SELECT * FROM videos ORDER BY id DESC");
 $stmt->execute();
 while($row = $stmt->fetch()){
 
@@ -76,6 +76,11 @@ while($row = $stmt->fetch()){
 </table>
 </body>
 </html>
+
+
+
+
+
 
 
 
