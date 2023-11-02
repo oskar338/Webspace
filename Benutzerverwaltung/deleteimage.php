@@ -58,11 +58,10 @@ if(isset($_GET["del"])){
     }
 }
 
+$image_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
 $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
 $stmt->execute();
 while($row = $stmt->fetch()){
-
-    $image_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
 
     ?>
     <tr>
