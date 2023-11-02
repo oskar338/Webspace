@@ -59,7 +59,6 @@ if(isset($_GET["del"])){
 }
 
 $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
-$image_ur = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
 $stmt->execute();
 while($row = $stmt->fetch()){
 
