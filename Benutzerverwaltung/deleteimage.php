@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>suffkopp.com</title>
-    <link rel="stylesheet" href="/style/styleimageverwaltung.css">
+    <link rel="stylesheet" href="/style/styleimage.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 
 </head>
