@@ -19,7 +19,7 @@
 
 <tr>
     <th>ID</th>
-    <th>Video-Adresse</th>
+    <th>Video Anschauen</th>
     <th>Löschen</th>
     </tr>
 
