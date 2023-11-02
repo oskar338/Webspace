@@ -77,8 +77,8 @@ if(isset($_GET["del"])){
     <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
     
     </tr>
-    <?php 
-}
+    
+
 ?>
 
 </table>
