@@ -54,8 +54,9 @@ if(isset($_GET["del"])){
         $row = $stmt->fetch();
         $image_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
 
-        //Nachricht Löschen erfolgreich
-        echo "Das Lösschen war erfolgreich";
+        ?>
+        <p>Das Löschen war erfolgreich</p>
+        <?php
 
         // Lösche Foto von Dateisystem
         unlink($image_url);
