@@ -59,14 +59,14 @@ if(isset($_GET["del"])){
 }
 
 $stmt = $mysql->prepare("SELECT * FROM images ORDER BY id DESC");
-$image_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
+$image_ur = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" . $row["image_url"];
 $stmt->execute();
 while($row = $stmt->fetch()){
 
     ?>
     <tr>
     <td><?php echo $row["id"] ?></td>
-    <td><a href="<?php echo $image_url["image_url"] ?>"><?php echo $row["image_url"]?></a></td>
+    <td><a href="<?php echo $image_ur["image_url"] ?>"><?php echo $row["image_url"]?></a></td>
     <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
     </tr>
     <?php
