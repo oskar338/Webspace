@@ -37,9 +37,13 @@ a{
   margin-left: 20px;
 }
 
-link {
+.link {
   color: blue;
   font-size: 10px;
 }
 
+.linkoben {
+  color: aqua;
+  font-size: 100px;
+}
 

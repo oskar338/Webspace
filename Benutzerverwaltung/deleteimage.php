@@ -10,10 +10,14 @@
 </head>
 <body>
 
+<div class="linkoben">
+
 <a href="Benutzerverwaltung.php">Zur Benutzerverwaltung</a><br>
 <a href="../index.php">Zurück zur Starseite</a><br>
 <br>
 <br>
+
+</div>
 
 <table>
 
