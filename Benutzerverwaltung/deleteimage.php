@@ -65,7 +65,7 @@ while($row = $stmt->fetch()){
     ?>
     <tr>
     <td><?php echo $row["id"] ?></td>
-    <td><a href="<?php echo $target_dir = "suffkopp.com/geheim/uploads/" ?>" target="_blank"><?php echo $row["image_url"]?></a></td>
+    <td><a href="<?php echo $target_dir = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploads/" ?>" target="_blank"><?php echo $row["image_url"]?></a></td>
     <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
     </tr>
     <?php
