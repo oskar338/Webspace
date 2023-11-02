@@ -30,7 +30,16 @@ body{
 }
 
 .linkoben {
-  color: aqua;
-  font-size: 100px;
+  font-family: Aladin, cursive;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  font-size: 44px;
+  color: white;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  text-decoration: underline;
+  text-decoration-color: black;
+  margin-left: 20px;
 }
+
 
