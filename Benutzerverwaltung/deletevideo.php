@@ -47,6 +47,9 @@ if(isset($_GET["del"])){
         $row = $stmt->fetch();
         $video_url = $_SERVER['DOCUMENT_ROOT'] . "/geheim/uploadvideos/" . $row["video_url"];
 
+        //Nachricht Löschen erfolgreich
+        echo "Das Lösschen war erfolgreich";
+
         // Lösche Video von Dateisystem
         unlink($video_url);
         
