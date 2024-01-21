@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Aladin');
 
-a{
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
     font-family: Aladin, cursive;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 3vw; /* Ändern Sie die Schriftgröße entsprechend der Bildschirmbreite */
     color: black;
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
     text-decoration: underline;
     text-decoration-color: white;
+}
 
+/* Für Bildschirme kleiner als 600px */
+@media only screen and (max-width: 600px) {
+    a {
+        font-size: 5vw;
+    }
 }
