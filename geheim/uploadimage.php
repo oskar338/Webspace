@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-
-<a href="geheimimage.php">Zurück</a>
-<title>suffkopp.com</title>
-<link rel="stylesheet" href="/style/styleupload.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>suffkopp.com</title>
+    <link rel="stylesheet" href="/style/styleupload.css">
 </head>
+<body>
+    <a href="geheimimage.php">Zurück</a>
+    <?php 
 
-<?php 
 
 if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 	include "mysqlgeheim.php";
@@ -41,3 +41,7 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 }else {
 				header("Location: geheimimage.php");
 }
+
+?>
+</body>
+</html>
