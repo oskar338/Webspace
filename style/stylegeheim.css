@@ -20,16 +20,25 @@ body {
     height: auto;
 }
 
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
-    float: left;
+    float: none;
 }
 
 nav li a {
@@ -44,8 +53,47 @@ nav li a:hover {
     background-color: #111;
 }
 
-/* Rest of your code */
+input[type="file"]{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: Aladin, cursive;
+    color: white;
+    background: red;
+    font-size: 30px;
+    letter-spacing: 1,5px;
+    user-select: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+input[type=submit]{
+    font-family: Aladin, cursive;
+    font-size: 25px;
+    border: none;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px;
+}
 
 @media screen and (max-width: 600px) {
-    /* Rest of your code */
+    a{
+        font-size: 24px;
+    }
+
+    label{
+        font-size: 15px;
+        padding: 10px;
+        margin-left: 15px;
+    }
+
+    input[type=submit]{
+        font-size: 12px;
+        padding: 7px;
+    }
 }
