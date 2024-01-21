@@ -1,28 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Aladin');
 
 body {
-    padding-top: 0; /* Entfernen oder auf 0 setzen */
+    padding-top: 10cm; /* Setzen Sie den Abstand unter der Navigationsleiste auf 10 cm */
+    margin: 0; /* Entfernen Sie den Rand um den Körper */
 }
 
-nav ul {
-    height: auto; /* Hinzugefügt, um die Höhe von ul anzupassen */
-}
+.alb {
+    margin-top: 10cm; /* Fügen Sie margin-top hinzu, um die Bilder nach unten zu verschieben */
+ }
 
 .alb img {
     width: 100%;
     height: auto;
 }
 
-body {
-    padding-top: 0; /* Entfernen oder auf 0 setzen */
+nav {
+    width: 100%; /* Stellen Sie sicher, dass die Navigationsleiste die volle Breite hat */
+    height: auto; /* Hinzugefügt, um die Höhe der Navigationsleiste anzupassen */
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 nav ul {
-    height: auto; /* Hinzugefügt, um die Höhe von ul anzupassen */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
-    float: none;
+    float: left;
 }
 
 nav li a {
