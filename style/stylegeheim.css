@@ -6,6 +6,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     min-height: 100vh;
+    padding-top: 10cm; /* Abstand unter der Navigationsleiste */
 }
 
 .alb {
