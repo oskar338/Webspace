@@ -18,18 +18,31 @@ if(!isset($_SESSION["username"])){
 <title>suffkopp.com</title>
 <link rel="stylesheet" href="/style/stylegeheim.css">
 
+<header class="nav-top">
+    <div class="logo">LOGO</div>
+    <nav class="nav-menu">
+        <ul>
+              <li><a href="#">Dashboard</a></li>
+             <li>
+                <a href="#">System</a>
+                <ul>
+                <li><a href="#">Reisen</a></li>
+                <li><a href="#">Fotografieren</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Content</a>
+                  <ul>
+                 <li><a href="#">Reisen</a></li>
+                 <li><a href="#">Fotografieren</a></li>
+                     </ul>
+            </li>
+              <li><a href="#">Help</a></li>
+             </ul>
+    </nav>
+</header>
+
 </head>
 <body>
-
-<nav>
-  <ul>
-    <li><a href="geheimvideo.php">Videos</a></li>
-    <li><a href="#anker">Runter</a></li>
-  </ul>
-</nav>
-
-
-
 
 <?php 
 	$sql = "SELECT * FROM images ORDER BY id DESC";
