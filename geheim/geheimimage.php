@@ -21,12 +21,8 @@ if(!isset($_SESSION["username"])){
 </head>
 <body>
 
-<nav>
-  <ul>
-    <li><a href="geheimvideo.php">Videos</a></li>
-    <li><a href="#anker">Runter</a></li>
-  </ul>
-</nav>
+<a href="geheimvideo.php">Videos</a>
+<a href="#anker">Runter</a>
 
 <?php 
 	$sql = "SELECT * FROM images ORDER BY id DESC";
