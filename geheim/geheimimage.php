@@ -28,6 +28,9 @@ if(!isset($_SESSION["username"])){
   </ul>
 </nav>
 
+
+
+
 <?php 
 	$sql = "SELECT * FROM images ORDER BY id DESC";
     $res = mysqli_query($conn,  $sql);
