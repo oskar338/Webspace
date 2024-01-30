@@ -32,7 +32,8 @@ nav ul {
     overflow: hidden;
     background-color: #333;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Ändern Sie dies von center zu space-between */
+    padding: 0 50px; /* Fügen Sie horizontale Polsterung hinzu, um den Inhalt von den Rändern fernzuhalten */
 }
 
 nav li {
