@@ -9,14 +9,12 @@
 </head>
 <body>
 
-<div class="oben">
-
-<a href="Benutzerverwaltung.php">Zur Benutzerverwaltung</a><br>
-<a href="../index.php">Zurück zur Starseite</a><br>
-<br>
-<br>
-
-</div>
+<nav>
+  <ul>
+    <li><a href="geheimvideo.php">Videos</a></li>
+    <li><a href="../index.php">Zurück zur Starseite</a><br>
+  </ul>
+</nav>
 
 <table>
 
