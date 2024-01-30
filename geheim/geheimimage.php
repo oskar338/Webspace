@@ -50,21 +50,5 @@ if(!isset($_SESSION["username"])){
 	<p><?php echo $_GET['Fehler']; ?></p>
 <?php endif ?>
 
-<form action="uploadimage.php"
-    method="post"
-    enctype="multipart/form-data">
-
-<input type="file" id="Bildup" name="my_image">
-<label for="Bildup">Bild Auswählen</label>
-
-<input type="submit" 
-    name="submit"
-	value="Hochladen">
-
-     	
-</form>
-
-<a name="anker"></a>
-
 </body>
 </html>
