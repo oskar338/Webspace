@@ -6,7 +6,6 @@
     <title>suffkopp.com</title>
     <link rel="stylesheet" href="/style/styleimage.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-
 </head>
 <body>
 
@@ -21,12 +20,11 @@
 
 <table>
 
-
 <tr>
     <th>ID</th>
     <th>Foto Vorschau</th>
     <th>Löschen</th>
-    </tr>
+</tr>
 
 <?php
     session_start();
@@ -75,7 +73,7 @@ while($row = $stmt->fetch()){
     ?>
     <tr>
     <td><?php echo $row["id"] ?></td>
-    <div class="link"><td><a href="<?php echo "/geheim/uploads/" . $row["image_url"] ?>"><?php echo $row["image_url"]?></a></td></div>
+    <td><a href="<?php echo "/geheim/uploads/" . $row["image_url"] ?>"><img src="<?php echo "/geheim/uploads/" . $row["image_url"] ?>" alt="<?php echo $row["image_url"]?>" style="width:100px;height:auto;"></a></td>
     <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
     </tr>
     <?php
@@ -87,5 +85,3 @@ while($row = $stmt->fetch()){
 </table>
 </body>
 </html>
-
-
