@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Aladin');
 
 body {
+    padding-top: 10cm; /* Setzen Sie den Abstand unter der Navigationsleiste auf 10 cm */
     margin: 0; /* Entfernen Sie den Rand um den Körper */
     padding-top: 1cm;
 }
@@ -11,10 +12,31 @@ body {
     height: auto;
  }
 
- .alb img {
+.alb img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+}
+
+nav {
+    width: 100%; /* Stellen Sie sicher, dass die Navigationsleiste die volle Breite hat */
+    height: auto; /* Hinzugefügt, um die Höhe der Navigationsleiste anzupassen */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    float: left;
 }
 
 nav li a {
