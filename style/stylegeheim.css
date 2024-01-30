@@ -10,7 +10,7 @@ body {
     margin-top: 0,5cm; /* Fügen Sie margin-top hinzu, um die Bilder nach unten zu verschieben */
     width: auto;
     height: auto;
- }
+}
 
 .alb img {
     width: 100%;
@@ -93,5 +93,20 @@ input[type=submit]{
     input[type=submit]{
         font-size: 12px;
         padding: 7px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .alb {
+        width: 50%; /* oder eine andere geeignete Größe */
+        float: left;
+    }
+
+    .alb img {
+        width: 80%; /* Anpassung der Breite */
+        height: auto; /* Höhe automatisch anpassen */
+        display: block; /* zentriert das Bild */
+        margin-left: auto;
+        margin-right: auto;
     }
 }
