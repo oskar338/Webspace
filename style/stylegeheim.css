@@ -103,7 +103,11 @@ input[type=submit]{
     }
 
     .alb img {
-        width: 100%;
-        height: auto;
+        width: 80%; /* Anpassung der Breite */
+        height: auto; /* Höhe automatisch anpassen */
+        display: block; /* zentriert das Bild */
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
