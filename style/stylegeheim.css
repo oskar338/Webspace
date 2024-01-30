@@ -95,3 +95,15 @@ input[type=submit]{
         padding: 7px;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .alb {
+        width: 50%; /* oder eine andere geeignete Größe */
+        float: left;
+    }
+
+    .alb img {
+        width: 100%;
+        height: auto;
+    }
+}
