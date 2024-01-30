@@ -6,7 +6,9 @@ body {
 }
 
 .alb {
-    margin-top: 10cm; /* Fügen Sie margin-top hinzu, um die Bilder nach unten zu verschieben */
+    margin-top: 2cm; /* Fügen Sie margin-top hinzu, um die Bilder nach unten zu verschieben */
+    width: 100%;
+    height: 100%;
  }
 
 .alb img {
