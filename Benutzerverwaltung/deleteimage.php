@@ -73,7 +73,7 @@ while($row = $stmt->fetch()){
     ?>
     <tr>
     <td><?php echo $row["id"] ?></td>
-    <td><a href="<?php echo "/geheim/uploads/" . $row["image_url"] ?>"><img src="<?php echo "/geheim/uploads/" . $row["image_url"] ?>" alt="<?php echo $row["image_url"]?>" style="width:100px;height:auto;"></a></td>
+    <td><a href="<?php echo "/geheim/uploads/" . $row["image_url"] ?>"><img src="<?php echo "/geheim/uploads/" . $row["image_url"] ?>" alt="<?php echo $row["image_url"]?>" style="width:200px;height:auto;"></a></td>
     <td><a href="deleteimage.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
     </tr>
     <?php
