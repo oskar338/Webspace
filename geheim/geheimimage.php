@@ -24,7 +24,13 @@ if(!isset($_SESSION["username"])){
 <nav>
   <ul>
     <li><a href="geheimvideo.php">Videos</a></li>
-    <li><a href="#anker">Runter</a></li>
+    <li>
+      <form action="uploadimage.php" method="post" enctype="multipart/form-data">
+        <input type="file" id="Bildup" name="my_image">
+        <label for="Bildup">Bild Auswählen</label>
+        <input type="submit" name="submit" value="Hochladen">
+      </form>
+    </li>
   </ul>
 </nav>
 
