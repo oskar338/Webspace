@@ -2,6 +2,7 @@
 
 body {
     margin: 0; /* Entfernen Sie den Rand um den Körper */
+    padding-top: 1cm;
 }
 
 .alb {
